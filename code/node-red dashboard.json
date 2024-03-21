@@ -1,0 +1,853 @@
+[
+    {
+        "id": "a592c8e6dc4662de",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "752673eda6bc2d3e",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM4",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "78c63c230494a2b1",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c97439f93936bcfa",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#cc0000",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Georgia,Georgia,serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#cc0000",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#cc0000",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff1a1a",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#cc0000",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Dashboard Drone",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 60,
+                "sy": 60,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c6c7f744037bff18",
+        "type": "ui_group",
+        "name": "Accelerometro",
+        "tab": "78c63c230494a2b1",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1fa379f19deb1cb0",
+        "type": "ui_group",
+        "name": "Giroscopio",
+        "tab": "78c63c230494a2b1",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b804d19f436d6eaa",
+        "type": "ui_group",
+        "name": "Temperatura",
+        "tab": "78c63c230494a2b1",
+        "order": 3,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e028f0aa6a00d068",
+        "type": "ui_group",
+        "name": "Motori_SX",
+        "tab": "78c63c230494a2b1",
+        "order": 4,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b09b81a45d193753",
+        "type": "ui_spacer",
+        "z": "a592c8e6dc4662de",
+        "name": "spacer",
+        "group": "1bf85c946849c491",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "139cbec46d596660",
+        "type": "ui_group",
+        "name": "Motori_DX",
+        "tab": "78c63c230494a2b1",
+        "order": 5,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9eefe3ad31223241",
+        "type": "ui-base",
+        "name": "UI Name",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false
+    },
+    {
+        "id": "41cd17b3a4ec1664",
+        "type": "ui-theme",
+        "name": "Theme Name",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#6d9db0",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "9fc663c4f6ebaafd",
+        "type": "ui-page",
+        "name": "Page Name",
+        "ui": "9eefe3ad31223241",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "41cd17b3a4ec1664",
+        "order": -1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "65f5a674fc4cb2b4",
+        "type": "ui-group",
+        "name": "Group Name",
+        "page": "9fc663c4f6ebaafd",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6b359c6b41b88d93",
+        "type": "websocket-listener",
+        "path": "",
+        "wholemsg": "false"
+    },
+    {
+        "id": "aa3e0b3e0c8afded",
+        "type": "websocket-listener",
+        "path": "",
+        "wholemsg": "false"
+    },
+    {
+        "id": "63231ea80eccece3",
+        "type": "debug",
+        "z": "a592c8e6dc4662de",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "219b601754fb9ef0",
+        "type": "ui_text",
+        "z": "a592c8e6dc4662de",
+        "group": "c6c7f744037bff18",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Asse X:  ",
+        "format": "{{msg.payload[0]}} m/s^2",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1140,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a8870a4f4f087e73",
+        "type": "ui_text",
+        "z": "a592c8e6dc4662de",
+        "group": "c6c7f744037bff18",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Asse Y:  ",
+        "format": "{{msg.payload[1]}} m/s^2",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1140,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bceeddc3eb67bf3e",
+        "type": "debug",
+        "z": "a592c8e6dc4662de",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f8d4cb5e18ce1924",
+        "type": "function",
+        "z": "a592c8e6dc4662de",
+        "name": "IMU_acc_gyr",
+        "func": "var numbers = msg.payload;\nvar tutto = numbers.split(\";\");\nvar numeriFinali = {payload: tutto};\nreturn [numeriFinali];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "bceeddc3eb67bf3e",
+                "9104bb79173e9e81",
+                "a08eb8a353af25d4",
+                "d2e175861b85c4c2",
+                "eb8d9186d55cdeb5",
+                "40824c0f5df99020",
+                "4a066ff2f4dd0b1f",
+                "3e64b68f0e939473",
+                "7afd75a662ed2f66",
+                "1dca6162413c6a02",
+                "79350aaa65d44a48"
+            ]
+        ]
+    },
+    {
+        "id": "a8d4660c7eb49f34",
+        "type": "ui_text",
+        "z": "a592c8e6dc4662de",
+        "group": "c6c7f744037bff18",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Asse Z:  ",
+        "format": "{{msg.payload[2]}} m/s^2",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1120,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6af5b90890164202",
+        "type": "ui_text",
+        "z": "a592c8e6dc4662de",
+        "group": "1fa379f19deb1cb0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Asse X:  ",
+        "format": "{{msg.payload[3]}} rad/s",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1100,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "56eb2917c6a7fe73",
+        "type": "ui_text",
+        "z": "a592c8e6dc4662de",
+        "group": "1fa379f19deb1cb0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Asse Y:  ",
+        "format": "{{msg.payload[4]}} rad/s",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1100,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "dba9587397aebd35",
+        "type": "ui_text",
+        "z": "a592c8e6dc4662de",
+        "group": "1fa379f19deb1cb0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Asse Z:  ",
+        "format": "{{msg.payload[5]}} rad/s",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1100,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f981dc22e17f6d7b",
+        "type": "ui_text",
+        "z": "a592c8e6dc4662de",
+        "group": "b804d19f436d6eaa",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperatura",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 670,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "53534caf7574f01b",
+        "type": "ui_chart",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "group": "b804d19f436d6eaa",
+        "order": 2,
+        "width": 8,
+        "height": 7,
+        "label": "Temperatura nel tempo",
+        "chartType": "polar-area",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "15",
+        "ymax": "30",
+        "removeOlder": "10",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e18eea445435274",
+        "type": "function",
+        "z": "a592c8e6dc4662de",
+        "name": "Temperatura",
+        "func": "var numbers = msg.payload;\nvar numeri = numbers.split(\";\");\nvar numeriFinali = {payload: numeri[6]};\nreturn [numeriFinali];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "f981dc22e17f6d7b",
+                "c9a94f0e9e1ff05d"
+            ]
+        ]
+    },
+    {
+        "id": "4a066ff2f4dd0b1f",
+        "type": "ui_gauge",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "group": "139cbec46d596660",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Motor C - TOPRIGHT",
+        "label": "units",
+        "format": "{{msg.payload[9]}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "3e64b68f0e939473",
+        "type": "ui_gauge",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "group": "139cbec46d596660",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Motor D - BOTTOMRIGHT",
+        "label": "units",
+        "format": "{{msg.payload[10]}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 600,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "eb8d9186d55cdeb5",
+        "type": "ui_gauge",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "group": "e028f0aa6a00d068",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Motore A - BOTTOMLEFT",
+        "label": "units",
+        "format": "{{msg.payload[7]}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 570,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "40824c0f5df99020",
+        "type": "ui_gauge",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "group": "e028f0aa6a00d068",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Motor B - TOPLEFT",
+        "label": "units",
+        "format": "{{msg.payload[8]}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "c9a94f0e9e1ff05d",
+        "type": "rbe",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 570,
+        "y": 40,
+        "wires": [
+            [
+                "53534caf7574f01b"
+            ]
+        ]
+    },
+    {
+        "id": "7afd75a662ed2f66",
+        "type": "rbe",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 910,
+        "y": 260,
+        "wires": [
+            [
+                "219b601754fb9ef0"
+            ]
+        ]
+    },
+    {
+        "id": "1dca6162413c6a02",
+        "type": "rbe",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 910,
+        "y": 300,
+        "wires": [
+            [
+                "a8870a4f4f087e73"
+            ]
+        ]
+    },
+    {
+        "id": "79350aaa65d44a48",
+        "type": "rbe",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "a8d4660c7eb49f34"
+            ]
+        ]
+    },
+    {
+        "id": "d2e175861b85c4c2",
+        "type": "rbe",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 910,
+        "y": 560,
+        "wires": [
+            [
+                "dba9587397aebd35"
+            ]
+        ]
+    },
+    {
+        "id": "9104bb79173e9e81",
+        "type": "rbe",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "6af5b90890164202"
+            ]
+        ]
+    },
+    {
+        "id": "a08eb8a353af25d4",
+        "type": "rbe",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "56eb2917c6a7fe73"
+            ]
+        ]
+    },
+    {
+        "id": "df0c5aab9b762896",
+        "type": "comment",
+        "z": "a592c8e6dc4662de",
+        "name": "acc",
+        "info": "acceleration values",
+        "x": 1090,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d4499a40fa1383b5",
+        "type": "comment",
+        "z": "a592c8e6dc4662de",
+        "name": "gyro",
+        "info": "gyroscope values",
+        "x": 1230,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5c3d8a192c34cf6d",
+        "type": "comment",
+        "z": "a592c8e6dc4662de",
+        "name": "motors",
+        "info": "motors speed",
+        "x": 730,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "16b34637b6b339e5",
+        "type": "tcp in",
+        "z": "a592c8e6dc4662de",
+        "name": "",
+        "server": "client",
+        "host": "192.168.1.143",
+        "port": "8000",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "1e18eea445435274",
+                "63231ea80eccece3",
+                "f8d4cb5e18ce1924"
+            ]
+        ]
+    }
+]
